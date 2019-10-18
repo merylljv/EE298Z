@@ -268,7 +268,7 @@ def main(include_id=False, include_C=True, include_D=True, include_V=False,
         sub = X_test.loc[:, 'TransactionID']
         X_test = X_test.drop(columns=['TransactionID'])
     else:
-        sub = pd.DataFrame(X_test.index)
+        sub = pd.DataFrame(index = X_test.index)
 
     # split training data into training and validation data
     features = train.drop(columns=['isFraud'])
