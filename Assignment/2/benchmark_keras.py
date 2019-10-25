@@ -8,8 +8,8 @@ except ImportError:
     from tensorflow import keras
     from tensorflow.keras import backend as K
 
-from .classifier_keras import model as classifier
-from .structural_similarity import structural_similarity as ssim
+from classifier_keras import model as classifier
+from structural_similarity import structural_similarity as ssim
 
 
 class IdentityModel(keras.Model):

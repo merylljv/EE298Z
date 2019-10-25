@@ -4,8 +4,8 @@ import numpy as np
 import torch
 from torch import nn
 
-from .classifier_torch import Net
-from .structural_similarity import structural_similarity as ssim
+from classifier_torch import Net
+from structural_similarity import structural_similarity as ssim
 
 
 class IdentityModel(nn.Module):
